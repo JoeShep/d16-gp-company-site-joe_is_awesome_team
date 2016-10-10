@@ -41,17 +41,20 @@ Your team is going to learn how to use git to enable good teamwork when building
     1. `git push origin YOUR BRANCH NAME`
 1. Now make a PR and get your team to approve it and merge into master.
 1. Now everyone should `git pull origin master`.
-1. That's the last commit you make on the master branch. At this point, each teammate will create their branch.
+1. At this point, each teammate will create their branch.
 
 Now everyone will work on their page on those individual branches. Only when teammates feel that the work is complete, the teammate will push up their branch to Github and create a pull request. One of the other teammates must review the pull request and give a thumbs up (Just type :+1 in the comment box).
 
-Once the PR gets a thumbs up, the teammates can merge the branch by following this process.
+Once the PR gets a thumbs up, the teammate who created the PR should merge the branch to master by clicking the green button. Then you can delete the branch (all of this is on github).  
+
+Locally, you run `git branch -D the branch name` to delete the branch on your machine
+
+Each team member can grab the newly updated master branch by running:
 
 ```bash
 git checkout master
-git merge [your approved branch name] 
-# Fix any merge conflicts, if you have them
-git push origin master
+git pull origin master
+
 ```
 
 ### Product page
